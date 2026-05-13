@@ -1,0 +1,551 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Inicio Header */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 40px;
+    border-bottom: 1px solid #ccc;
+    position: sticky !important;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar .menu a:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+
+
+/* Botón MENÚ vertical: solo responsive */
+@media (max-width: 992px) {
+    .menu-btn {
+        position: fixed;
+        top: 14%;
+        right: 0;
+        transform: translateY(-50%);
+        background-color: #4A60A1;
+        color: #fff;
+        padding: 40px 10px;
+        cursor: pointer;
+        z-index: 1001;
+        font-weight: bold;
+        border-radius: 8px 0 0 8px;
+        writing-mode: vertical-rl;
+        /* Texto vertical */
+        text-orientation: mixed;
+        /* Para que se lea correctamente */
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .navbar ul.menu.active {
+        transform: translateX(0);
+        /* Lo mueve de nuevo a la posición inicial (visible) */
+    }
+
+    /* Menú lateral responsive */
+    .navbar ul.menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        background-color: #fff;
+        flex-direction: column;
+        padding-top: 60px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        margin: 0;
+    }
+
+    /* Cuando el menú está activo */
+
+
+    .navbar ul.menu li a {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}
+
+/* En escritorio, el botón no aparece */
+@media (min-width: 993px) {
+    .menu-btn {
+        display: none;
+    }
+}
+
+
+/* Finaliza Header */
+
+
+ul {
+    margin: 0;
+}
+
+
+
+/* Inicio Footer */
+
+footer {
+    background: #f2f2f2;
+    margin-top: 0;
+    padding-top: 30px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+    padding: 0 40px;
+}
+
+.footer-container h4 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-container ul li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.footer-logo {
+    width: 140px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background: #f2f2f2;
+    color: white;
+    font-size: 13px;
+}
+
+footer {
+    background: #f2f2f2;
+    color: white;
+    margin-top: 0;
+    padding-top: 40px;
+}
+
+
+
+.footer-container h4 {
+    color: #000;
+font-weight: bold;
+    margin-bottom: 12px;
+    font-size: 16px;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-container ul li {
+    margin-bottom: 8px;
+    color: #000;
+    font-size: 14px;
+}
+
+.footer-container a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-container a:hover {
+    color: #00bfa6;
+}
+
+.footer-logo {
+    width: 140px;
+}
+
+.footer-bottom {
+    background: #f2f2f2;
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 13px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-social a {
+    color: #000;
+    margin: 0 6px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #00bfa6;
+
+
+}
+
+/* ===== Responsive Footer ===== */
+@media (max-width: 1024px) {
+    .footer-container {
+        justify-content: space-between;
+        padding: 0 20px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-container h4 {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .footer-container ul li {
+        margin-bottom: 6px;
+    }
+
+    .footer-logo {
+        margin-bottom: 15px;
+    }
+
+    .footer-social {
+        margin-top: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 0 15px 20px;
+    }
+
+    .footer-social a {
+        margin: 0 4px;
+        font-size: 14px;
+    }
+
+    .footer-logo {
+        width: 120px;
+    }
+}
+
+
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin-bottom: 30px;
+}
+
+.footer-container .col {
+    flex: 1 1 220px;
+    margin: 10px 0;
+}
+
+.footer-logo {
+    width: 160px;
+}
+
+.footer-container h4 {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-container ul li {
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+
+
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 13px;
+    color: #bbb;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que las columnas se acomoden en pantallas pequeñas */
+    justify-content: space-between;
+    /* Espacio igual entre columnas */
+    gap: 2rem;
+    /* Espacio adicional opcional entre columnas */
+    padding: 2rem;
+    max-width: 1200px;
+    /* Para centrar y limitar ancho */
+    margin: 0 auto;
+}
+
+.footer-container .col {
+    flex: 1 1 200px;
+    /* Cada columna ocupa al menos 200px y crece según el espacio disponible */
+    min-width: 180px;
+    /* Evita que se achique demasiado en pantallas pequeñas */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+
+/* Finaliza Footer */
+
+
+
+
+.scroll-toggle {
+    position: fixed;
+    bottom: 50px;
+    right: 32px;
+    background-color: #4A60A1;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 50;
+    transition: transform 0.3s ease;
+}
+
+.scroll-toggle:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 480px) {
+
+    .whatsapp-float,
+    .scroll-toggle {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        /* puedes ajustar para todos igual */
+    }
+}
+
+.scroll-toggle {
+    position: fixed;
+    bottom: 95px;
+    right: 25px;
+    background-color: #4A60A1;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+
+.scroll-toggle:hover {
+    transform: scale(1.1);
+}
+
+.scroll-toggle.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Tamaño base de todos los botones flotantes */
+.whatsapp-float,
+.scroll-toggle {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    /* para ícono o número */
+}
+
+/* Hover consistente */
+.whatsapp-float:hover
+.scroll-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Ajuste en móvil */
+@media (max-width: 480px) {
+
+    .whatsapp-float,
+    .uf-float,
+    .scroll-toggle {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+
+/* ===== BOTÓN WHATSAPP ===== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    box-shadow: #075E54;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 999;
+    text-decoration: none;
+
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-float i {
+    display: block;
+    line-height: 0;
+    vertical-align: middle;
+}
+
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+.topbar {
+    background: #2C3A61;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.social a {
+    margin-left: 10px;
+    color: white;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 18px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #00bfa5;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
