@@ -1,3 +1,5 @@
+Link: https://gualringo.laboratoriodiseno.cl/carbar/
+
 # Estructura General del Proyecto
 
 Los proyectos se desarrollan utilizando una estructura modular en WordPress con el objetivo de mantener una organización clara, escalable y fácil de administrar. Cada sección del tema cumple una función específica para separar correctamente la lógica, estilos, scripts y componentes personalizados del sistema.
