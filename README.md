@@ -1,8 +1,8 @@
-Estructura General del Proyecto
+# Estructura General del Proyecto
 
 Los proyectos se desarrollan utilizando una estructura modular en WordPress con el objetivo de mantener una organización clara, escalable y fácil de administrar. Cada sección del tema cumple una función específica para separar correctamente la lógica, estilos, scripts y componentes personalizados del sistema.
 
-template-parts/
+## template-parts/
 
 En esta carpeta se encuentran las plantillas reutilizables del proyecto. Aquí se almacenan las estructuras correspondientes a páginas, entradas y distintos componentes utilizados dentro del sitio.
 
@@ -18,7 +18,7 @@ assets/
 
 La carpeta assets contiene todos los recursos visuales y funcionales utilizados dentro del proyecto.
 
-assets/libreria/css/
+## assets/libreria/css/
 
 Aquí se almacenan todos los archivos CSS utilizados en el desarrollo del sitio, incluyendo:
 
@@ -27,7 +27,8 @@ diseño responsive
 componentes visuales
 animaciones
 personalizaciones del tema
-assets/libreria/js/
+
+## assets/libreria/js/
 
 Contiene todos los archivos JavaScript del proyecto, encargados de funcionalidades dinámicas como:
 
@@ -36,7 +37,8 @@ filtros
 interacciones dinámicas
 peticiones AJAX
 comportamiento personalizado de componentes
-includes/
+
+## includes/
 
 La carpeta includes se utiliza para centralizar y organizar los hooks y configuraciones generales del tema.
 
@@ -53,7 +55,7 @@ configuraciones generales del tema
 
 Esta metodología permite separar correctamente la lógica del proyecto y mejorar la mantenibilidad del código.
 
-modulos/
+## modulos/
 
 La carpeta modulos contiene todas las funcionalidades personalizadas que modifican o extienden el comportamiento de WordPress.
 
@@ -69,6 +71,6 @@ módulos específicos del proyecto
 
 Esta estructura permite mantener las funcionalidades desacopladas y facilita futuras mejoras o ampliaciones del sistema.
 
-Objetivo de la Arquitectura
+# Objetivo de la Arquitectura
 
 La estructura modular utilizada en los proyectos busca mantener una organización clara entre vistas, estilos, scripts y funcionalidades personalizadas, permitiendo desarrollar sitios más mantenibles, escalables y fáciles de administrar tanto a nivel visual como funcional.
