@@ -10,11 +10,12 @@ La finalidad de esta organización es mantener una separación clara entre las d
 
 Dentro de esta sección se pueden encontrar:
 
-plantillas de páginas
-estructuras para entradas
-componentes reutilizables
-secciones dinámicas del sitio
-assets/
+- plantillas de páginas
+- estructuras para entradas
+- componentes reutilizables
+- secciones dinámicas del sitio
+
+## assets/
 
 La carpeta assets contiene todos los recursos visuales y funcionales utilizados dentro del proyecto.
 
@@ -22,21 +23,21 @@ La carpeta assets contiene todos los recursos visuales y funcionales utilizados 
 
 Aquí se almacenan todos los archivos CSS utilizados en el desarrollo del sitio, incluyendo:
 
-estilos globales
-diseño responsive
-componentes visuales
-animaciones
-personalizaciones del tema
+- estilos globales
+- diseño responsive
+- componentes visuales
+- animaciones
+- personalizaciones del tema
 
 ## assets/libreria/js/
 
 Contiene todos los archivos JavaScript del proyecto, encargados de funcionalidades dinámicas como:
 
-sliders y carruseles
-filtros
-interacciones dinámicas
-peticiones AJAX
-comportamiento personalizado de componentes
+- sliders y carruseles
+- filtros
+- interacciones dinámicas
+- peticiones AJAX
+- comportamiento personalizado de componentes
 
 ## includes/
 
@@ -46,12 +47,12 @@ Dentro de esta sección se encuentran archivos encargados de registrar y cargar 
 
 Ejemplos:
 
-carga automática de archivos CSS
-carga de scripts JavaScript
-configuración de menús
-navegación personalizada
-inicialización de módulos
-configuraciones generales del tema
+- carga automática de archivos CSS
+- carga de scripts JavaScript
+- configuración de menús
+- navegación personalizada
+- inicialización de módulos
+- configuraciones generales del tema
 
 Esta metodología permite separar correctamente la lógica del proyecto y mejorar la mantenibilidad del código.
 
@@ -63,11 +64,11 @@ Aquí se desarrollan módulos encargados de agregar nuevas características al p
 
 Entre las funcionalidades que pueden encontrarse:
 
-creación de taxonomías personalizadas
-nuevos apartados en el menú lateral de WordPress
-administración de contenido dinámico
-personalización del panel administrativo
-módulos específicos del proyecto
+- creación de taxonomías personalizadas
+- nuevos apartados en el menú lateral de WordPress
+- administración de contenido dinámico
+- personalización del panel administrativo
+- módulos específicos del proyecto
 
 Esta estructura permite mantener las funcionalidades desacopladas y facilita futuras mejoras o ampliaciones del sistema.
 
